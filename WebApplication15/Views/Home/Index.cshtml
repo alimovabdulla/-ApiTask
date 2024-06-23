@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<div class="container">
+    <form action="/HomeController/Index" method="post">
+        <input type="text" name="cityName" placeholder="Şəhərin Adın Yazz">
+        <input asp-action="index" asp-controller="home" type="submit" value="Gönder">
+    </form>
+    <div>
+        <h2>Şəhər: @ViewBag.v5</h2>
+        <h2>Temperature: @ViewBag.v1</h2>
+        <h2>Hava: @ViewBag.v2</h2>
+        <h2>Gunes Cixir: @ViewBag.v3</h2>
+        <h2>Gunes Batir: @ViewBag.v4</h2>
+
+
+
+    </div>
+
+
+</div>
